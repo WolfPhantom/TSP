@@ -4,7 +4,7 @@ El  problema del vendedor viajero o también conocido como TSP (por siglas en in
 
 A lo largo de la historia, se han diversas soluciones a este problema. Por ejemplo: 
 
-	Karl Menger (Shortest Hamiltonian Path, 1930), J.B. Robinson 	(Hamiltonian game, 1949), G. Dantzig, R. Fulkerson, y S. Johnson 	(Solution of a large-scale traveling-salesman problem, 1954), M. Held 	and R.M. Karp (Introducción de heurísticas basadas en programación 	dinámica, 1962), entre otros. (Espinoza, 2006)
+> Karl Menger (Shortest Hamiltonian Path, 1930), J.B. Robinson 	(Hamiltonian game, 1949), G. Dantzig, R. Fulkerson, y S. Johnson 	(Solution of a large-scale traveling-salesman problem, 1954), M. Held 	and R.M. Karp (Introducción de heurísticas basadas en programación 	dinámica, 1962), entre otros. (Espinoza, 2006)
 
 La principal motivación para el desarrollo del proyecto, consiste en las diferentes aplicaciones del TSP. Algunas de ellas son estudio en la secuencia de genes, diseño de chips, enrutamiento de vehículos, entre otras.
 
@@ -169,7 +169,7 @@ La complejidad del algoritmo de la búsqueda por la fuerza bruta  en el tiempo e
 ## 6. Conclusiones
 Luego de hacer las pruebas debidas, hemos comprobado que se ha podido implementar una solución para TSP en los nodos de tamaño corto, debido a que en el peor de los casos es posible factorial de n
 
-Referencias
+## Referencias
 
 Espinoza, D. (2006). El Problema del Vendedor Viajero (TSP) y Programación Entera (IP) [diapositivas de PowerPoint]. Recuperado de: http://www.dii.uchile.cl/~daespino/PApers/TSP_and_IP_chile_050820.pdf 
 
