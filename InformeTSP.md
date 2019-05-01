@@ -10,13 +10,13 @@ La principal motivación para el desarrollo del proyecto, consiste en las difere
 
 ## 2.	Objetivo
 
-El presente trabajo tiene como objetivo principal encontrar una solución parcial al problema de TSP usando una dataset del Ministerio de Educación del Perú. La cual contiene la posición geográfica (latitud y longitud) de cada centro poblado del Perú.
+El presente trabajo tiene como objetivo principal encontrar una solución parcial al problema de TSP usando una *dataset* del Ministerio de Educación del Perú. La cual contiene la posición geográfica (latitud y longitud) de cada centro poblado del Perú.
 
 ## 3.	Marco Teórico
 
 El algoritmo de búsqueda por fuerza bruta, conocido también como búsqueda exhaustiva. Es una técnica de programación, la cual consiste en encontrar todos los candidatos a solución y verificar, uno por uno, si satisfacen al problema.
 
-El backtracking es una técnica de programación para hacer una búsqueda a través de todas las alternativas en un espacio de búsqueda. Para esto, los algoritmos que emplean backtracking construyen posibles soluciones candidatas. Por ejemplo, dada una solución candidata “s” se verifica si es solución, si no lo es se construyen todas las posibles extensiones de “s” y se invoca recursivamente al algoritmo con todas ellas.
+El *backtracking* es una técnica de programación para hacer una búsqueda a través de todas las alternativas en un espacio de búsqueda. Para esto, los algoritmos que emplean *backtracking* construyen posibles soluciones candidatas. Por ejemplo, dada una solución candidata “s” se verifica si es solución, si no lo es se construyen todas las posibles extensiones de “s” y se invoca recursivamente al algoritmo con todas ellas.
 
 ## 4.	Soluciones
 Fuerza Bruta(Solucion Ingenua)
