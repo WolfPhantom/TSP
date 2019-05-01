@@ -29,15 +29,17 @@ El backtracking es una técnica de programación para hacer una búsqueda a trav
 	En estos ciclos hamiltonianos, el problema del vendedor ambulante corresponde a los ciclos de costo mínimo.
  
 	Algoritmo:
-	•Primero, hemos creado la estructura de datos del gráfico utilizando la matriz de adyacencia para almacenar cada vértices.
-	•	Generado el peso aleatorio o la matriz de conexiones.
-	•	Luego extraemos todos los ciclos hamiltonianos usando la función tsp () en nuestroprograma. Esta función funciona como:
-	•	Primero, enviamos el vértice inicial como argumento en función.
-	•	Ahora, el siguiente fragmento de código se procesa solo en vértices no visitados. También tenemos Estructura de datos de 		ruta mantenida para almacenar la ruta hamiltoniana. Visitas de ruta cada vértice exactamente una vez.
-	•	Compruebe si agregar vértice a la ruta lleva a la solución o no es
-	•	Contribuyendo entonces considérelo en el camino hamiltoniano.
-	•	De lo contrario Retrocede hasta que te recuperes.
-	También hemos implementado el código para obtener una ruta óptima dentro de la propia función.
+	1)Primero, hemos creado la estructura de datos del gráfico utilizando la matriz de adyacencia para almacenar cada vértices.
+	
+	2)	Generado el peso aleatorio o la matriz de conexiones.
+	
+	3)	Luego extraemos todos los ciclos hamiltonianos usando la función tsp () en nuestroprograma. Esta función funciona como:
+	4)	Primero, enviamos el vértice inicial como argumento en función.
+	5)	Ahora, el siguiente fragmento de código se procesa solo en vértices no visitados. También tenemos Estructura de datos de 		ruta mantenida para almacenar la ruta hamiltoniana. Visitas de ruta cada vértice exactamente una vez.
+	6)	Compruebe si agregar vértice a la ruta lleva a la solución o no es
+	7)	Contribuyendo entonces considérelo en el camino hamiltoniano.
+	8)	De lo contrario Retrocede hasta que te recuperes.
+	9)También hemos implementado el código para obtener una ruta óptima dentro de la propia función.
 	Verificamos la ruta, si es la ruta, calculamos el costo de los ciclos y
 	Compáralo con el ciclo global hasta ahora. Y si queda satisfecho entonces almacenamos el camino óptimo en la estructura de datos         para imprimirlo después del final del programa.
 
