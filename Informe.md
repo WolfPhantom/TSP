@@ -17,7 +17,30 @@ El algoritmo de búsqueda por fuerza bruta, conocido también como búsqueda exh
 El backtracking es una técnica de programación para hacer una búsqueda a través de todas las alternativas en un espacio de búsqueda. Para esto, los algoritmos que emplean backtracking construyen posibles soluciones candidatas. Por ejemplo, dada una solución candidata “s” se verifica si es solución, si no lo es se construyen todas las posibles extensiones de “s” y se invoca recursivamente al algoritmo con todas ellas.
 
 4.	Soluciones
-	[Poner algoritmos]
+
+	Fuerza Bruta(Solucion Ingenua)
+	1) Considere la ciudad 1 como el punto inicial y final. 
+	2) Generar todos (n-1)! Permutaciones de las ciudades. 
+	3) Calcule el costo de cada permutación y realice un seguimiento de la    permutación del costo mínimo. 
+	4) Devolver la permutación con costo mínimo.
+
+	BackTracking
+	En este caso, primero creamos todos los ciclos hamiltonianos utilizando conceptos de retroceso profundo. Entonces entre
+	En estos ciclos hamiltonianos, el problema del vendedor ambulante corresponde a los ciclos de costo mínimo.
+ 
+	Algoritmo:
+•	Primero, hemos creado la estructura de datos del gráfico utilizando la matriz de adyacencia para almacenar cada vértices.
+•	Generado el peso aleatorio o la matriz de conexiones.
+•	Luego extraemos todos los ciclos hamiltonianos usando la función tsp () en nuestroprograma. Esta función funciona como:
+•	Primero, enviamos el vértice inicial como argumento en función.
+•	Ahora, el siguiente fragmento de código se procesa solo en vértices no visitados. También tenemos Estructura de datos de ruta mantenida para almacenar la ruta hamiltoniana. Visitas de ruta cada vértice exactamente una vez.
+•	Compruebe si agregar vértice a la ruta lleva a la solución o no es
+•	Contribuyendo entonces considérelo en el camino hamiltoniano.
+•	De lo contrario Retrocede hasta que te recuperes.
+4. También hemos implementado el código para obtener una ruta óptima dentro de la propia función.
+Verificamos la ruta, si es la ruta, calculamos el costo de los ciclos y
+Compáralo con el ciclo global hasta ahora. Y si queda satisfecho entonces almacenamos el camino óptimo en la estructura de datos para imprimirlo después del final del programa.
+
 
 5.	Complejidad
 
