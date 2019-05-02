@@ -81,31 +81,33 @@ def BruteForce(self, G, s):
 BackTracking
 
 En este caso, primero creamos todos los ciclos hamiltonianos utilizando conceptos de retroceso profundo. Entonces entre
-En estos ciclos hamiltonianos, el problema del vendedor ambulante corresponde a los ciclos de costo mínimo.
+estos ciclos hamiltonianos, el problema del vendedor ambulante corresponde a los ciclos de costo mínimo.
  
 Algoritmo:
 
-•	Primero, hemos creado la estructura de datos del gráfico utilizando la matriz de adyacencia para almacenar cada vértices.
+* Primero, hemos creado la estructura de datos del gráfico utilizando la matriz de adyacencia para almacenar cada vértices.
 
-•	Generado el peso aleatorio o la matriz de conexiones.
+* Generado el peso aleatorio o la matriz de conexiones.
 
-•	Luego extraemos todos los ciclos hamiltonianos usando la función tsp () en nuestroprograma. Esta función funciona como:
+* Luego extraemos todos los ciclos hamiltonianos usando la función tsp () en nuestroprograma. Esta función funciona como:
 
-•	Primero, enviamos el vértice inicial como argumento en función.
+        * Primero, enviamos el vértice inicial como argumento en función.
 
-•	Ahora, el siguiente fragmento de código se procesa solo en vértices no visitados. También tenemos Estructura de datos de ruta mantenida para almacenar la ruta hamiltoniana. Visitas de ruta cada vértice exactamente una vez.
+        * Ahora, el siguiente fragmento de código se procesa solo en vértices no visitados. 
+          También tenemos una estructura de datos de ruta mantenida para almacenar la ruta hamiltoniana. 
+          Visitas de ruta cada vértice exactamente una vez.
 
-•	Compruebe si agregar vértice a la ruta lleva a la solución o no es
+        * Compruebe si agregar vértice a la ruta lleva a la solución o no.
 
-•	Contribuyendo entonces considérelo en el camino hamiltoniano.
+        * Contribuyendo entonces considérelo en el camino hamiltoniano.
+        
+        * De lo contrario Retrocede hasta que te recuperes.
 
-•	De lo contrario Retrocede hasta que te recuperes.
-
-•	También hemos implementado el código para obtener una ruta óptima dentro de la propia función.
+* También hemos implementado el código para obtener una ruta óptima dentro de la propia función.
 Verificamos la ruta, si es la ruta, calculamos el costo de los ciclos y
-Compáralo con el ciclo global hasta ahora. Y si queda satisfecho entonces almacenamos el camino óptimo en la estructura de datos para imprimirlo después del final del programa.
+compáralo con el ciclo global hasta ahora. Y si queda satisfecho entonces almacenamos el camino óptimo en la estructura de datos para imprimirlo después del final del programa.
 ```Python
-def tsp(self,graph, v, currPos, n,path):
+def tsp(self, graph, v, currPos, n, path):
         
         
         # Si se llega al último nodo y tiene
@@ -116,24 +118,24 @@ def tsp(self,graph, v, currPos, n,path):
         # Finalmente volver a verificar
         # más valores posibles
         
-        if len(path)+1==n:
-            nd=int(self.nodo.get())
-            path=[nd]+path
+        if len(path) + 1 == n:
+            nd = int(self.nodo.get())
+            path = [nd] + path
             
-            temp_cost=0
-            k=path[0]
+            temp_cost = 0
+            k = path[0]
             for x in range(len(path)):
                 temp_cost += graph[k][path[x]]; 
                 k = path[x];
-            temp_cost+= graph[k][0]
+            temp_cost += graph[k][0]
             
             
-            if temp_cost<self.min_costB:
-                self.optimal_pathB=path
-                self.min_costB=temp_cost
+            if temp_cost < self.min_costB:
+                self.optimal_pathB = path
+                self.min_costB = temp_cost
             
-            elif temp_cost==self.min_costB:
-                self.optimal_pathB=[]
+            elif temp_cost == self.min_costB:
+                self.optimal_pathB = []
                 for t in path:
                     self.optimal_pathB.append(t)
             
