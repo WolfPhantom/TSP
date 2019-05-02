@@ -28,14 +28,13 @@ Fuerza Bruta(Solucion Ingenua)
 ```Python
 def BruteForce(self,G,  s):
         
-     
         """almacenar todos los vértices aparte del vértice fuente """
-        n=len(G)
-        vertex=[]; 
-        vertexV=[]
-        a=1
+        n = len(G)
+        vertex = []; 
+        vertexV = []
+        a = 1
         for i in range(n):
-            if i !=s:
+            if i != s:
                 vertex.append(i)
                 vertexV.append(i)
     
@@ -43,8 +42,8 @@ def BruteForce(self,G,  s):
         """ almacenar el peso mínimo del ciclo hamiltoniano."""
         min_path = 9999999
     
-        lista_caminos=[]
-        permutaciones=list(itertools.permutations(vertexV,n-1))
+        lista_caminos = []
+        permutaciones = list(itertools.permutations(vertexV, n-1))
         while next_permutation(vertex):
    
   
@@ -60,23 +59,21 @@ def BruteForce(self,G,  s):
         
             current_pathweight += G[k][s]
         
-        
-        
-           
+
             min_path = min(min_path, current_pathweight);
         
-            lista_caminos.append([list(permutaciones[a]),current_pathweight])
+            lista_caminos.append([list(permutaciones[a]), current_pathweight])
         
-            if a==fact(len(vertexV)):
+            if a == fact(len(vertexV)):
                 break
-            a+=1
+            a += 1
         
         for i in range(len(lista_caminos)):
-            if lista_caminos[i][1]==min_path:
-                sol= lista_caminos[i]
-        recorrido=[s]+sol[0]+[s]
-        peso=sol[1]
-        return recorrido,peso
+            if lista_caminos[i][1] == min_path:
+                sol = lista_caminos[i]
+        recorrido = [s] + sol[0] + [s]
+        peso = sol[1]
+        return recorrido, peso
 
 ```
 
