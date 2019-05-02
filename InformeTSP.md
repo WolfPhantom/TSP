@@ -26,7 +26,7 @@ Fuerza Bruta(Solucion Ingenua)
 4) Devolver la permutación con costo mínimo.
 
 ```Python
-def BruteForce(self,G,  s):
+def BruteForce(self, G, s):
         
         """almacenar todos los vértices aparte del vértice fuente """
         n = len(G)
