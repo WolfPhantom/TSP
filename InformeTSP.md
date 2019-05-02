@@ -166,7 +166,7 @@ def tsp(self, graph, v, currPos, n, path):
 La complejidad del algoritmo de la búsqueda por la fuerza bruta  en el tiempo es O (N!). Por lo que nunca debes usar en listas largas. 
 
 ## 6. Conclusiones
-Luego de hacer las pruebas debidas, hemos comprobado que se ha podido implementar una solución para TSP en los nodos de tamaño corto, debido a que en el peor de los casos es posible factorial de n
+Luego de hacer las pruebas debidas, hemos comprobado que se ha podido implementar una solución para TSP en los nodos de tamaño corto, debido a que en el peor de los casos es posible factorial de n.
 
 ## Referencias
 
