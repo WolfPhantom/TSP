@@ -182,7 +182,7 @@ class mclass:
         
         self.txt.insert(END, "\n"+"Centros Poblados: "+str(self.Ln))"""
         if op=="BruteForce":
-            
+            self.optimal_path,self.optimal_path_w=self.BruteForce(self.g,nd)
             self.arcos=arcos_activos(self.optimal_path)
      
             self.txt.delete('1.0', END)
@@ -191,7 +191,7 @@ class mclass:
             self.txt.insert(END, "\n"+"Centros Poblados: "+str(self.Ln))
           #Backtraking
         elif op=='Backtracking':
-            
+            self.tsp(self.g, v, nd, n,self.pathB)
             self.optimal_pathB=self.optimal_pathB+[nd]
             self.arcos=arcos_activos(self.optimal_pathB)
             
